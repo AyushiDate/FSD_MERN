@@ -113,7 +113,195 @@ console.log(numbers)
        }
       }
       
-    
+      sorting
+
+      // let nums = createRandomNumberArray(5,100)
+      
+      // console.log(nums)
+      
+      // // bubble sort algo 
+      // let temp;
+      // let i , j = 0;
+      
+      // // logic
+      
+      // for( i = 0 ; i < nums.length ; i++){
+      //     for( j = 0 ; j < nums.length ; j++){
+      //         if( nums[j] > nums[j+1] ){
+      //             temp = nums[j]
+      //             nums[j] = nums[j+1]
+      //             nums[j+1] = temp
+      //         }
+      //     }
+      // }
+      
+      // console.log("sorted array 1 is  : ")
+      // console.log(nums)
+      
+      // for( i = 0 ; i < nums.length ; i++){
+      //     for( j = 0 ; j < nums.length ; j++){
+      //         if( nums[j] < nums[j+1] ){
+      //             temp = nums[j]
+      //             nums[j] = nums[j+1]
+      //             nums[j+1] = temp
+      //         }
+      //     }
+      // }
+      
+      // console.log("sorted array 2 is : ")
+      // console.log(nums)
+      
+      // binary search algorithm
+      
+      
+      // genrating radom array
+      
+      // let Array1 = createRandomNumberArray(10, 100)
+      
+      // console.log(Array1)
+      
+      // Array1 = sortArray(Array1)
+      
+      // console.log(Array1)
+      
+      // write less
+      
+      // let searchValue = prompt("Enter Value to search in Array Using Binary Algo !")
+      
+      // let Array1 = [10, 22, 33, 45, 57, 58, 60, 99, 110, 111, 112, 113, 114, 115]
+      
+      // let searchValue = 50
+      
+      // // logic
+      // // if value is found return the value or else if not found return -1
+      
+      // let upperBound = Array1.length - 1
+      // let lowerBound = 0
+      
+      // console.log(upperBound, lowerBound, midPoint)
+      
+      // for (let i = 0; upperBound != lowerBound; i++) {
+      
+      //     if (midPoint == searchValue) {
+      //         console.log(`we found the element ${midPoint} !`)
+      //         break;
+      //     } else if (midPoint < searchValue) {
+      //         upperBound = midPoint
+      //         lowerBound = 0
+      //         midPoint = lowerBound + Math.floor(upperBound - lowerBound / 2)
+      //     }else{
+      //         upperBound = Array1.length - 1
+      //         lowerBound = midPoint
+      //         midPoint = lowerBound + Math.floor(upperBound - lowerBound / 2)
+      //     }
+      
+      // }
+      
+      // while (midPoint <= upperBound) {
+      //     if (Array1[midPoint] == searchValue) {
+      //         console.log(`we found the element ${midPoint} !`)
+      //         // break;
+      //     } else if (midPoint < searchValue) {
+      //         upperBound = midPoint
+      //         lowerBound = 0
+      //         midPoint = lowerBound + Math.floor((upperBound - lowerBound )/ 2)
+      //     } else {
+      //         upperBound = Array1.length - 1
+      //         lowerBound = midPoint
+      //         midPoint = lowerBound + Math.floor((upperBound - lowerBound )/ 2)
+      //     }
+      // }
+      
+      // while (lowerBound <= upperBound) {
+      
+      //     let midPoint = lowerBound + Math.floor((upperBound - lowerBound) / 2)
+      
+      
+      //     if (Array1[midPoint] == searchValue) {
+      //         console.log(`Element Found ${searchValue}`)
+      //         break;
+      //     } else if (Array1[midPoint] < searchValue) {
+      //         lowerBound = midPoint
+      //     } else if (Array1[midPoint] > searchValue){
+      //         upperBound = midPoint
+      //     }else{
+      //         console.log(`Element not Found ${searchValue}`)
+      //     }
+      // }
+      
+      // let binarySearchFunction = (array,searchValue) =>{
+      //     let upperBound = array.length - 1
+      //     let lowerBound = 0
+      
+      //     while(lowerBound <= upperBound){
+      //         let midPoint = lowerBound + Math.floor((upperBound - lowerBound)/2)
+      
+      //         if(array[midPoint] == searchValue){
+      //             return `element ${searchValue} is present in the array !`
+      //         }
+      
+      //         if(array[midPoint] < searchValue){
+      //             lowerBound = midPoint + 1
+      //         }else{
+      //             upperBound = midPoint - 1
+      //         }
+      //     }
+      
+      //     return `element ${searchValue} is not present in the array !`
+      
+      // }
+      
+      // console.log(binarySearchFunction(Array1,58))
+      
+      // using while loop
+      
+      let Array1 = createRandomNumberArray(10,100)
+      
+      Array1 = sortArray(Array1)
+      
+      console.log(Array1)
+      
+      let searchValue = Number(prompt("Enter Search Value for Binary Search in A array !"))
+      let flag = false
+      
+      let lowerBound = 0
+      let upperBound = Array1.length - 1
+      
+      let midPoint;
+      
+      let i = 0
+      
+      while (lowerBound <= upperBound) {
+      
+          if(searchValue < Array1[lowerBound] || searchValue > Array1[upperBound] ){
+              console.log("search element is not present !")
+              break;
+          } 
+      
+          midPoint = lowerBound + Math.floor((upperBound - lowerBound) / 2)
+      
+          if (Array1[midPoint] === searchValue){
+              flag = true
+              break;
+          }
+      
+          if(Array1[midPoint] < searchValue){
+              lowerBound = midPoint + 1
+          }else{
+              upperBound = midPoint - 1
+          }
+      
+          i = i + 1
+      
+      }
+      
+      if(flag){
+          console.log(`Element ${searchValue} found at index ${midPoint} !`)
+      }else{
+          console.log(`Element ${searchValue} not found !`)
+      }
+      
+      console.log(i)
     
     
 
