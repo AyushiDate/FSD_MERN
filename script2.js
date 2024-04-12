@@ -331,8 +331,36 @@ numbers=numbers.filter((element)=>{
 console.log(numbers);
 
 //those function who accepts another function as an arg can be called as higher order function
-   
+
+    /*let Array1 = createRandomNumberArray(10, 100)
+      
+      // console.log(Array1)
+      
+      // Array1 = sortArray(Array1)
+      
+      // console.log(Array1)*/
+
+      {
+        let array2=[1,2,3,4,5,6,7,8,9];
+            let searchvalue2=8;
+            let index=binarySearch(array2,searchvalue2);
+            console.log(index);
+
+        function binarySearch(array,searchvalue){
+            let lowerbound=0;
+            let upperbound=array.length-1;
+            while(lowerbound<=upperbound){
+                let mid=Math.floor((lowerbound+upperbound)/2);
+                if(array[mid]==searchvalue){
+                    return mid;
+                }else if(array[mid]<searchvalue){
+                    lowerbound=mid + 1;
+                }else{
+                    upperbound = mid -1;
+                } 
+            }
+            return -1;
+        }
+      }
     
-
-
 
