@@ -69,7 +69,7 @@ let numbers = createRandomNumberArray(10, 11)
 console.log(numbers)
 }*/
 
-{
+/*{
     let students = [ 
           {name: "amey" , age : 13 , contact: 9766696550},
            {name: "jayesh" , age : 19 , contact: 787454683},
@@ -78,7 +78,7 @@ console.log(numbers)
           {name: "Unnati" , age : 11 , contact: 5457993632},
            {name: "Tina" , age : 16 , contact: 8777999633},
            {name: "yash" , age: 22, contact: 7897987642 }
-       ]
+       ]*/
       
        //students[0].address = "nagpur"
       
@@ -107,13 +107,13 @@ console.log(numbers)
       
        students.map(displayStudents)*/
       
-       for(let i=0;i< students.length; i++){
+       /*for(let i=0;i< students.length; i++){
            console.log("for loop")
            console.log(students[i])
        }
-      }
+      }*/
       
-      sorting
+     // sorting
 
       // let nums = createRandomNumberArray(5,100)
       
@@ -255,7 +255,7 @@ console.log(numbers)
       
       // using while loop
       
-      let Array1 = createRandomNumberArray(10,100)
+     /* let Array1 = createRandomNumberArray(10,100)
       
       Array1 = sortArray(Array1)
       
@@ -302,7 +302,36 @@ console.log(numbers)
       }
       
       console.log(i)
-    
+    */
+   //sort Method ascending order
+   {
+   let numbers = [5,7,9,4,3];
+   console.log(numbers);
+   numbers=numbers.sort ((a,b) => {
+    return a-b;
+  } )
+   console.log(numbers)
+}
+
+   //descending order
+   {
+   let numbers = [5,7,9,4,3];
+   console.log(numbers);
+   numbers=numbers.sort ((a,b) => {
+    return b-a;
+  } )
+   console.log(numbers)
+}
+//filter method
+let numbers =[1,3,5,7,9];
+console.log(numbers);
+numbers=numbers.filter((element)=>{
+    return element != 7
+})
+console.log(numbers);
+
+//those function who accepts another function as an arg can be called as higher order function
+   
     
 
 
