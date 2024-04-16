@@ -1,0 +1,42 @@
+body{
+    font-family:sans-serif;
+    background-color: palevioletred;
+}
+
+.container{
+    height:300px;
+    width:400px;
+    margin-left: 33%;
+    background-color: white;
+    margin-top: 5px;
+    /*text-align: center;
+    justify-content: center;
+    align-items: center;*/
+    padding:50px;
+}
+
+.head{
+    text-align: center;
+    padding:11px;
+    font-size: 30px;
+}
+
+.quiz{
+    margin-left: 20px;
+}
+
+.btn{
+    text-align: center;
+    padding: 9px;
+}
+
+.button{
+    height:40px;
+    width:140px;
+    background-color: blueviolet;
+    color: white;
+    font-size: 30px;
+    border: none;
+    outline:none;
+
+}
