@@ -36,3 +36,33 @@
 
 // console.log(e)
 
+//Add text in all divs at a time
+{
+let div = document.querySelectorAll("#i1");
+     div[0].innerText="Aish"
+     div[1].innerText="Aish"
+}
+
+//another method for add text in all divs at a time
+{
+let divs = document.querySelectorAll("#i1");
+let idx=1;
+    for(div of divs) {
+        div.innerText='Date ${idx}';
+        idx++;
+    }
+}
+
+// Add text with using queryselector
+{
+    let divs = document.querySelector("#i1");
+     divs.innerText="Ayushi Date"
+}
+
+//change innerText with using id
+{
+let a = document.getElementById("i1");
+   a.innerText="iiiiii";
+   console.log(a);
+}
+    
