@@ -152,8 +152,36 @@ const intervalId = setInterval(sayHello, 2000);*/
        },11000)*/
 
 
-
-function hello(){
+/*function hello(){
   console.log("hello")
 }
-setTimeout(hello,4000);
+setTimeout(hello,4000);*/
+/*let i=0;
+setTimeout(()=>{
+  while(i <=6)
+      console.log("hi") //we have to hold this line uptill 2 sec
+    i++
+  },2000)*/
+
+  // Example of setTimeout
+/*function greet() {
+  console.log("Hello!");
+}
+
+// Execute greet function after 2 seconds
+setTimeout(greet, 2000);*/
+
+// Example of setInterval
+function logTime() {
+  console.log(new Date());
+}
+
+// Execute logTime function every 1 second
+var intervalId = setInterval(logTime, 1000);
+
+// After 5 seconds, stop the interval
+setTimeout(function() {
+  clearInterval(intervalId);
+  console.log("Interval stopped.");
+}, 5000);
+
