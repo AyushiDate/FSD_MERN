@@ -53,7 +53,7 @@ footButton.on("click", () => {
         heightInches = 0
     }
 
-    let heightInMeters = (heightFoot * 0.3048) + (heightInches * 0.0254)
+    let heightInMeters = (heightFoot * 0.3048) + (heightInches * 0.0254)        // 1foot=30.48cm , 1 inch=2.54cm
 
     console.log(heightInMeters)
 
@@ -68,13 +68,13 @@ let calculateBMIMovePointer = (weight, height, UserName) => {
     bmi = (weight / Math.pow(height, 2)).toFixed(2)
 
 
-    if (bmi < 18) {
+    if (bmi < 18) {                                     //under Weight
         move = "12.5%"
-    } else if (bmi > 18 && bmi < 25) {
+    } else if (bmi > 18 && bmi < 25) {                  //normal Weight
         move = "37.5%"
-    } else if (bmi > 25 && bmi < 30) {
+    } else if (bmi > 25 && bmi < 30) {                  //Over weight
         move = "62.5%"
-    } else if (bmi > 30) {
+    } else if (bmi > 30) {                              // Obesity
         move = "87.5%"
     } else {
         move = "0"
