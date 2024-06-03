@@ -19,6 +19,8 @@ let move = 0
 
 let bmi = 0;
 
+console.log("js")
+
 meterButton.on("click", () => {
     let weight = Number(document.querySelector("#weightKg").value)
     let height = Number(document.querySelector("#heightM").value)

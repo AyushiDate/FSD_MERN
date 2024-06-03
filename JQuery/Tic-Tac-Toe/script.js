@@ -155,3 +155,36 @@ function startGame() {
         }
     }
 }
+
+
+// stop game on timmer and reset the grid to all empty
+            // // check if grid is full and declear a draw !
+
+            // for (let j = 0; j < grid.length; grid++) {
+            //     if (!grid[i]) {
+            //         $("#winner").text(`Grid Is Full Game Draw !`)
+            //     }
+            // }
+
+       
+
+/*var timer;
+function startTimer(){
+    var timeLeft=10;
+    timer = setInterval(function(){
+        if(timeLeft > 0){
+            console.log(timeLeft +'seconds remaining');
+            timeLeft--;
+        }else{
+            console.log('Time is up !');
+            clearInterval(timer);
+        }
+    },1000);
+}
+clearInterval(timer);*/
+
+/*$('#stop-game').click(function() {
+    clearInterval(timer);
+    gameActive = false;
+    alert('Game stopped at ' + timeElapsed + ' seconds.');
+});*/
